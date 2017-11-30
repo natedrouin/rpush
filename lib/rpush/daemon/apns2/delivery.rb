@@ -78,7 +78,7 @@ module Rpush
         end
 
         def ok(notification)
-          log_info("#{notification.id} sent to #{notification.device_token}")
+          log_info(notification)
           @batch.mark_delivered(notification)
         end
 
