@@ -34,7 +34,7 @@ module Rpush
 
         def describe_deliveries
           @batch.each_notification do |notification|
-            log_info("#{notification.id} sent to #{notification.device_token}")
+            log_info(notification)
           end
         end
       end
