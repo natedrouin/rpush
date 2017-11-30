@@ -34,7 +34,8 @@ module Rpush
 
         def describe_deliveries
           @batch.each_notification do |notification|
-            log_info("#{notification.to_binary}")
+            puts notification
+            log_info(notification)
           end
         end
       end
